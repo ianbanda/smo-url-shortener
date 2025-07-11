@@ -1,0 +1,30 @@
+{
+  "name": "ianbanda/smo-url-shortener",
+  "description": "A simple Laravel package for shortening URLs",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ian Brian Banda",
+      "email": "banda.ian45@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9 || ^10 || ^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ian\\UrlShortener\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ian\\UrlShortener\\UrlShortenerServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
